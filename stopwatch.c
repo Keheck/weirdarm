@@ -7,14 +7,14 @@ void systick() {
 }
 
 void timer_toggle() {
-    __asm__("push {lr}");
+    //__asm__("push {lr}");
 
     // Logically equivalent to the above, except for the function call to avoid the push of LR onto the stack
     *STK_CTL ^= 1;
     // Required to enable the interrupt again
     *EXTI_PR1 = 1 << 0;
     
-    __asm__("pop {pc}");
+    //__asm__("pop {pc}");
 }
 
 int _start() {
