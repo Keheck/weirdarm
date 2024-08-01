@@ -1,7 +1,7 @@
 # Weird ARM happenings
 
-This is the repository for [this SO issue](http://example.com) (TBA) to
-hopefully shed some light onto what the heck is happening. This project is
+This is the repository for [this SO issue](https://stackoverflow.com/q/78821390/22236156)
+to hopefully shed some light onto what the heck is happening. This project is
 set up for the STM32 L432KC microcontroller which uses an ARM Cortex M4 chip.
 It is a stripped down version of the original project, the most important files
 are `stopwatch.c` and `head.S`.
